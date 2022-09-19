@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>ToDo_client</module>
+        <module>ToDo-JDBC</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
