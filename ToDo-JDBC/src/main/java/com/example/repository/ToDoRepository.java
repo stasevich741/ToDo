@@ -20,7 +20,7 @@ public class ToDoRepository implements CommonRepository<ToDo> {
             " values (:id, -.description,:created,:modified,:completed)";
     private static final String SQL_QUERY_FIND_ALL = "select id, description, created, modified, completed from todo";
     private static final String SQL_QUERY_FIND_BY_ID = SQL_QUERY_FIND_ALL + "where id = :id";
-    private static final String SQL_UPDATE = "update todo set description =:description, modified = -.modified, completed = :completed where id = :id";
+    private static final String SQL_UPDATE = "update todo set description =:description, modified = modified, completed = :completed where id = :id";
     private static final String SQL_DELETE = "delete from todo where id = :id";
     private final NamedParameterJdbcTemplate jdbcTemplate;
 
